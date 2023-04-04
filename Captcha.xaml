@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.Captcha"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Captcha" Height="300" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBox x:Name="CaptchaTextBox" Height="50" Width="200" Margin="20"
+                     Foreground="Red" FontSize="30" FontFamily="Bold" FontStyle="Italic"
+                     VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Button Width="200" Click="Button_Click">
+                <Label Content="New Capch"/>
+            </Button>
+            <TextBox x:Name="AnswerTextBox" Height="50" Width="200" Margin="20"/>
+            <Button Width="200" Click="Exam_Click">
+                <Label Content="Exam"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
